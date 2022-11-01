@@ -8,7 +8,7 @@
 // @icon         https://signin.aws.amazon.com/favicon.ico
 // @grant        GM_addStyle
 // @run-at       document-idle
-// @source       https://raw.githubusercontent.com/svenedge/greasemonkey_scripts/main/AWS_SAML_usability.js
+// @source       https://raw.githubusercontent.com/svenedge/greasemonkey_scripts/main/AWS_SAML_usability.user.js
 // ==/UserScript==
 
 (function() {
