@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         AWS_SAML_usability
-// @namespace    http://tampermonkey.net/
-// @version      0.2
+// @namespace    https://github.com/svenedge/greasemonkey_scripts/
+// @version      0.3
 // @description  Make the AWS SAML role selection page actually usable by humans
 // @author       Sven Edge
 // @match        https://signin.aws.amazon.com/saml
 // @icon         https://signin.aws.amazon.com/favicon.ico
 // @grant        GM_addStyle
 // @run-at       document-idle
+// @source       https://raw.githubusercontent.com/svenedge/greasemonkey_scripts/main/AWS_SAML_usability.js
 // ==/UserScript==
 
 (function() {
