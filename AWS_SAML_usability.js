@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         AWS_SAML_usability
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Make the AWS SAML role selection page actually usable by humans
 // @author       Sven Edge
 // @match        https://signin.aws.amazon.com/saml
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.com
+// @icon         https://signin.aws.amazon.com/favicon.ico
 // @grant        GM_addStyle
 // @run-at       document-idle
 // ==/UserScript==
@@ -16,7 +16,8 @@
     // Turn one long list into a shorter list with multiple columns
     GM_addStyle(`
     fieldset { columns: 4; }
-    #saml_form { max-width: 90% }
+    #saml_form { max-width: 95% }
+    #saml_form > fieldset > div.saml-account { break-inside: avoid-column; }
     `);
 
     const parentElement = document.querySelector('#saml_form > fieldset');
