@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AWS_SAML_usability
 // @namespace    https://github.com/svenedge/greasemonkey_scripts/
-// @version      0.3
+// @version      0.4
 // @description  Make the AWS SAML role selection page actually usable by humans
 // @author       Sven Edge
 // @match        https://signin.aws.amazon.com/saml
@@ -54,5 +54,10 @@
         //console.log(anAccount.dataset.roleName + " --- " + anAccount.dataset.accountName);
         parentElement.appendChild(anAccount);
     }
+
+    // add hidden submit button to make form respond to pressing enter key
+    const submitDiv = document.querySelector('#signin_button');
+    const submitButton = '<input type="submit" style="display:none"/>';
+    submitDiv.insertAdjacentHTML('afterend', submitButton);
 
 })();
