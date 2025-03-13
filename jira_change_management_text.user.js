@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JIRA Change Management Copy Text
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Add example values to copy to JIRA fields
 // @author       Sven & GitHub Copilot
 // @match        https://n-able.atlassian.net/*
@@ -63,7 +63,7 @@ Hacky. Only works on the issue page, as it runs on load. No idea how to hook int
 
 	}
 
-	// wait 3 seconds before running the script
+	// wait before running the script
 	console.log('User script waiting for JIRA to load...');
 	setTimeout(() => {
 		wait_for_jira_to_load();
@@ -98,6 +98,7 @@ Hacky. Only works on the issue page, as it runs on load. No idea how to hook int
 				name: 'Change Release Plan',
 				values: [
 					'N/A',
+					'See Description',
 					'See Github',
 					'Run ansible',
 					'Apply terraform',
@@ -107,6 +108,7 @@ Hacky. Only works on the issue page, as it runs on load. No idea how to hook int
 				name: 'Change Remediation Plan',
 				values: [
 					'N/A',
+					'See Description',
 					'See Github',
 					'Revert code and re-run ansible',
 					'Revert code and re-apply terraform',
@@ -116,6 +118,7 @@ Hacky. Only works on the issue page, as it runs on load. No idea how to hook int
 				name: 'Change Test Plan',
 				values: [
 					'N/A',
+					'See Description',
 					'See Github',
 
 				],
