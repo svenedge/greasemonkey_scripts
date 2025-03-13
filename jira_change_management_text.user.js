@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JIRA Change Management Copy Text
-// @namespace    http://tampermonkey.net/
-// @version      0.2
+// @namespace    https://github.com/svenedge/greasemonkey_scripts/
+// @version      0.3
 // @description  Add example values to copy to JIRA fields
 // @author       Sven & GitHub Copilot
 // @match        https://n-able.atlassian.net/*
