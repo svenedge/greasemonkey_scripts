@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JIRA Change Management Copy Text
 // @namespace    https://github.com/svenedge/greasemonkey_scripts/
-// @version      0.3
+// @version      0.4
 // @description  Add example values to copy to JIRA fields
 // @author       Sven & GitHub Copilot
 // @match        https://n-able.atlassian.net/*
@@ -120,7 +120,7 @@ Hacky. Only works on the issue page, as it runs on load. No idea how to hook int
 					'N/A',
 					'See Description',
 					'See Github',
-
+					'Engineering to test',
 				],
 			},
 		];
