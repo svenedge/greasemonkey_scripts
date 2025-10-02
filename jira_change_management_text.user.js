@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JIRA Change Management Copy Text
 // @namespace    https://github.com/svenedge/greasemonkey_scripts/
-// @version      0.4
+// @version      0.5
 // @description  Add example values to copy to JIRA fields
 // @author       Sven & GitHub Copilot
 // @match        https://n-able.atlassian.net/*
@@ -78,7 +78,7 @@ Hacky. Only works on the issue page, as it runs on load. No idea how to hook int
 		var element = null;
 		const intervalId = setInterval(() => {
 			tries++;
-			element = document.querySelector('h2[data-testid="issue-activity-feed.heading"]');
+			element = document.querySelector('[data-testid="issue-activity-feed.heading"]');
 			if (element) {
 				clearInterval(intervalId);
 				console.log('Found Activity element:', element, 'after', tries, 'tries');
